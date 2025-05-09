@@ -1,0 +1,68 @@
+/* Mobile First */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header, nav, footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #003366;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  margin: 0.5em 0;
+}
+
+.hero {
+  padding: 1em;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.inventory {
+  padding: 1em;
+}
+
+.car-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.car-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Larger screens */
+@media screen and (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .car-grid {
+    flex-direction: row;
+  }
+
+  .car-grid img {
+    width: 30%;
+  }
+}
